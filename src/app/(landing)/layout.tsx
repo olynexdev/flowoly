@@ -3,7 +3,7 @@ import Navbar from "@/components/layouts/Navbar";
 
 const LandingLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen font-montserrat">
       <Navbar />
       {children}
       <Footer />

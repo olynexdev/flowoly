@@ -3,6 +3,7 @@ import React from "react";
 import Container from "../global/Container";
 import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
+import PrimaryBtn from "../ui/PrimaryBtn";
 
 // Footer Component
 const Footer = () => {
@@ -42,8 +43,8 @@ const Footer = () => {
                 },
                 {
                   icon: <Phone size={15} color="white" />,
-                  label: "+1 307-785-6570",
-                  href: "tel:+13077856570",
+                  label: "+44 7877 418744",
+                  href: "tel:+447877418744",
                 },
                 {
                   icon: <MapPin size={15} color="white" />,
@@ -119,12 +120,11 @@ const Footer = () => {
                   required
                 />
               </div>
-              <button
-                type="submit"
-                className="w-full bg-btn-color hover:bg-btn-color/90 text-white font-medium py-3 px-4 rounded-lg transition-colors"
-              >
-                Subscribe
-              </button>
+              <PrimaryBtn
+                text="Subscribe"
+                className="w-full"
+                rounded="rounded-[8px]"
+              />
             </form>
 
             <div className="mt-8">
@@ -175,7 +175,7 @@ const Footer = () => {
                 />
 
                 <SocialLink
-                  href="https://www.facebook.com/flowagency/"
+                  href="https://www.facebook.com/flowoly"
                   icon={
                     <svg
                       width="20"

@@ -1,4 +1,5 @@
 import TemplateMarquee from "@/components/common/TemplateMarquee";
+import Faq from "@/components/pages/Home/Faq";
 import Hero from "@/components/pages/Home/Hero";
 import WebflowDevelopment from "@/components/pages/Home/WebflowDevelopment";
 
@@ -21,6 +22,7 @@ const LandingPage = () => {
         <div className="pointer-events-none absolute inset-y-0 right-0 -top-[50px] w-full h-[80px] bg-gradient-to-t from-black/90 z-10" />
       </div>
       <WebflowDevelopment />
+      <Faq />
     </div>
   );
 };

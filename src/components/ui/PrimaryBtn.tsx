@@ -1,4 +1,5 @@
-interface PrimaryBtnProps extends React.HTMLProps<HTMLButtonElement> {
+interface PrimaryBtnProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   rounded?: string;
   text: string;
   type?: "button" | "reset" | "submit";
@@ -7,7 +8,7 @@ interface PrimaryBtnProps extends React.HTMLProps<HTMLButtonElement> {
 }
 
 const PrimaryBtn = ({
-  rounded,
+  rounded = "rounded-full",
   text,
   type = "button",
   className = "",
@@ -19,9 +20,24 @@ const PrimaryBtn = ({
       {...props}
       disabled={disabled}
       type={type}
-      className={`bg-btn-color font-montserrat z-10 py-2 md:py-3 px-6 font-semibold text-[#FAFFFF] whitespace-nowrap ${rounded} active:scale-95 transition-all duration-300 shadow-[0px_4px_16px_rgba(149,_87,_253,_0.25)] gradient-button ${className}`}
+      className={`
+        relative z-10 
+        whitespace-nowrap
+        px-7 py-3
+        font-montserrat font-semibold
+        text-gray-900
+        bg-gradient-to-r from-[#d9f339] to-[#e6ff73]
+        ${rounded}
+        transition-all duration-300
+        hover:shadow-[0_6px_30px_rgba(217,243,57,0.6)]
+        active:scale-95
+        disabled:opacity-50 disabled:cursor-not-allowed
+        overflow-hidden
+        cursor-pointer
+        ${className}
+      `}
     >
-      {text}
+      <span className="relative z-10">{text}</span>
     </button>
   );
 };

@@ -1,12 +1,12 @@
 "use client";
-import PrimaryBtn from "@/components/ui/PrimaryBtn";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import { sidebarVariants } from "../animations/variants";
-import ButtonBlack from "../ui/ButtonBlack";
 import { cn } from "@/lib/utils";
+import ShinyButton from "../ui/ShinyButton";
+import PrimaryBtn from "../ui/PrimaryBtn";
 
 const Navbar = () => {
   const [showNavItems, setShowNavItems] = useState(true);
@@ -55,7 +55,7 @@ const Navbar = () => {
         ref={servicesRef}
         className={cn(
           `fixed transform -translate-x-1/2 left-1/2 lg:top-7 rounded-[16px] bg-transparent lg:bg-[#33333380] py-3 px-6 flex items-center z-[999] lg:backdrop-blur-[20px] transition-all duration-500 ease-out  lg:border border-[#ffffff26]`,
-          showNavItems ? "w-full lg:w-[788px]" : "w-full lg:w-[622px]"
+          showNavItems ? "w-full lg:w-[815px]" : "w-full lg:w-[642px]"
         )}
       >
         <div className="lg:flex hidden items-center gap-[146px]">
@@ -115,9 +115,14 @@ const Navbar = () => {
         <div className="lg:flex gap-4 ml-[50px] hidden">
           <Link href={"/contact-us"}>
             {showNavItems ? (
-              <PrimaryBtn rounded="rounded-[8px]" text="Contact Us" />
+              <ShinyButton>Contact Us</ShinyButton>
             ) : (
-              <ButtonBlack text="Contact Us" />
+              // <PrimaryBtn rounded="rounded-[8px]" text="Contact Us" />
+              <PrimaryBtn
+                text="Contact Us"
+                className=""
+                rounded="rounded-[8px]"
+              />
             )}
           </Link>
           <motion.div
@@ -129,7 +134,7 @@ const Navbar = () => {
             }}
           >
             <Link href="https://calendly.com/olynex/30min" target="_blank">
-              <PrimaryBtn rounded="rounded-[8px]" text="Book a call" />
+              <ShinyButton>Book a call</ShinyButton>
             </Link>
           </motion.div>
         </div>
