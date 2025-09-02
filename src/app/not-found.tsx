@@ -73,8 +73,8 @@ const NotFound = () => {
           </h1>
 
           <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            We're working hard to bring you an amazing experience. Our new page
-            is under construction and will be launched soon.
+            We&apos;re working hard to bring you an amazing experience. Our new
+            page is under construction and will be launched soon.
           </p>
 
           {/* Countdown Timer */}
@@ -112,7 +112,7 @@ const NotFound = () => {
               >
                 <p className="text-green-400 flex items-center justify-center gap-2">
                   <Star className="w-5 h-5" fill="currentColor" />
-                  Thank you! We'll notify you when we launch.
+                  Thank you! We&apos;ll notify you when we launch.
                 </p>
               </motion.div>
             ) : (
