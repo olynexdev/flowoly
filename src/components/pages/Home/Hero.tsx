@@ -11,25 +11,28 @@ const Hero = () => {
         <Container className="relative">
           <div className="flex flex-col lg:flex-row items-center  gap-[130px] relative hero-content">
             <div className="z-20 text-center">
-              <h1 className="text-white mb-5 lg:mb-6 text-3xl md:text-4xl lg:text-5xl 2xl:text-[90px] font-bold lg:leading-[90px] text-center max-w-[1287px]">
-                Create Sites Using <br /> Olynex -{" "}
-                <span className="template-name text-[#287BF6]">Webflow</span>{" "}
+              <h1 className="text-white mb-5 lg:mb-6 text-3xl md:text-4xl lg:text-5xl 2xl:text-[100px] font-bold lg:leading-[100px] text-center max-w-[1287px]">
+                Create Sites Using <br />
+                <span className="template-name text-[#287BF6]">
+                  Webflow
+                </span>{" "}
                 Theme.
               </h1>
-              <Paragraph className="text-paragraphTextColor max-w-[856px] text-center mx-auto">
-                We deliver results by crafting visually stunning UI (User
-                Interface) and intuitive UX (User Experience), ensuring seamless
-                navigation and exceptional user experiences in every single
-                digital product we create.
+              <Paragraph className="text-gray-400 max-w-[856px] text-center mx-auto">
+                Flowoly creates clean, modern, and fully customizable Webflow
+                templates designed to help you launch beautiful websites faster.
+                Our templates are built with seamless navigation, responsive
+                design, and great user experience in mind—so you can focus on
+                growing your business.
               </Paragraph>
               <PrimaryBtn
-                className="mt-10 text-xl py-4"
+                className="mt-10 text-xl py-3"
                 rounded="rounded-[8px] "
-                text="Book a call"
+                text="Templates"
               />
-              <Paragraph className="mt-5 text-paragraphTextColor max-w-[856px] text-center mx-auto">
+              {/* <Paragraph className="mt-5 text-paragraphTextColor max-w-[856px] text-center mx-auto">
                 Lifetime license, free updates, and fully support.
-              </Paragraph>
+              </Paragraph> */}
             </div>
 
             <div className="absolute right-0">
@@ -80,7 +83,7 @@ const Hero = () => {
                     </defs>
                   </svg>
                 </div>
-                <div className="bg-btn-color w-[200px] h-[200px] rounded-full absolute right-0 top-0 blur-[100px] backdrop-blur-lg z-0"></div>
+                {/* <div className="bg-btn-color w-[200px] h-[200px] rounded-full absolute right-0 top-0 blur-[100px] backdrop-blur-lg z-0"></div> */}
               </div>
             </div>
           </div>

@@ -32,7 +32,7 @@
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
+  /* --color-primary: var(--primary); */
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -44,16 +44,10 @@
 
   /* custom style  */
   --font-montserrat: "Montserrat", "sans-serif";
+  --color-primary: #d9f339;
   --font-poppins: "Poppins", "sans-serif";
   --animate-marquee: marquee var(--duration) infinite linear;
   --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
-  --bg-btn-color: linear-gradient(
-      135deg,
-      #27fc8c 6.5%,
-      #1ebfff 51.1%,
-      #9557fd 92.26%
-    ),
-    linear-gradient(98deg, #00f844 -1.47%, #0075ee 98.6%);
 
   --bg-service-gradient: linear-gradient(
     90deg,
@@ -184,4 +178,24 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.uiux-service-bg-gradient {
+  width: 1130.63px;
+  height: 455.705px;
+  transform: rotate(31.651deg);
+  flex-shrink: 0;
+  border-radius: 1130.63px;
+  background-image: linear-gradient(90deg, #daf3398c 0%, #0073ee6c 73.32%);
+  filter: blur(275px);
+}
+
+.bg-btn-color {
+  background: linear-gradient(
+      135deg,
+      #27fc8c 6.5%,
+      #1ebfff 51.1%,
+      #9557fd 92.26%
+    ),
+    linear-gradient(98deg, #00f844 -1.47%, #0075ee 98.6%);
 }
